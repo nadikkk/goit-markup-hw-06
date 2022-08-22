@@ -711,7 +711,7 @@ body {
   height: 15px;
   border: 2px solid var(--primery-text-color);
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 7px;
   background-size: contain;
   transition: background-image var(--duration) var(--timing-function),
   border-color var(--duration) var(--timing-function), 
@@ -720,8 +720,18 @@ body {
 }
 .modal-check-contract {
   color: var(--accent-color);
-  margin-left: 4px;
-  text-decoration-line: underline;
+  margin-left: 10px;
+  position: relative;
+}
+.modal-check-contract::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  width: calc(100% + 5px);
+  height: 1px;
+  background-color: var(--accent-color);
 }
 .modal-check-input:checked + .modal-check-label::before {
 background-image: url(../images/icon-check.svg);

@@ -659,8 +659,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
-  transition: outline-color var(--duration) var(--timing-function),
-   border-color var(--duration) var(--timing-function); 
+  transition: border-color var(--duration) var(--timing-function); 
 
 }
 .modal-form-icon {
@@ -672,7 +671,6 @@ body {
   color: var(--primery-text-color);
 }
 .modal-form-text:focus {
-  outline-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 .modal-form-text:focus + .modal-form-icon {
@@ -704,6 +702,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
+  transition: border-color var(--duration) var(--timing-function);
 
 }
 .modal-check-label::before {
@@ -718,6 +717,9 @@ body {
   border-color var(--duration) var(--timing-function), 
   background-origin var(--duration) var(--timing-function);
   
+}
+.modal-check-label:focus::before {
+  border-color: var(--accent-color);
 }
 .modal-check-contract {
   color: var(--accent-color);

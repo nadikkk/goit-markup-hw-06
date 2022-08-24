@@ -660,6 +660,7 @@ body {
   border-radius: 4px;
   padding: 12px 42px;
   transition: border-color var(--duration) var(--timing-function); 
+  outline: none;
 
 }
 .modal-form-icon {

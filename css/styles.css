@@ -719,9 +719,7 @@ body {
   background-origin var(--duration) var(--timing-function);
   
 }
-.modal-check-label:focus::before {
-  border-color: var(--accent-color);
-}
+
 .modal-check-contract {
   color: var(--accent-color);
   margin-left: 10px;
@@ -742,6 +740,9 @@ background-image: url(../images/icon-check.svg);
 background-origin: border-box;
 border-color: var(--accent-color);
 
+}
+.modal-check-input:focus + .modal-check-label::before {
+border-color: var(--accent-color);
 }
 .modal-btn-form {
   display: block;
